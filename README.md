@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Create Project
 
+### Create Next.js App
+
 ```txt
 > npx create-next-app matsudai.github.io
 npx: installed 1 in 4.928s
@@ -14,6 +16,14 @@ Installing react, react-dom, and next using npm...
 <<snip>>
 
 Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
+```
+
+### Create src directory and move sources
+
+```txt
+> mkdir src
+> git mv pages src\
+> git mv styles src\
 ```
 
 ## Getting Started
