@@ -2,6 +2,20 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Create Project
+
+```txt
+> npx create-next-app matsudai.github.io
+npx: installed 1 in 4.928s
+Creating a new Next.js app in C:\xxxxx\matsudai.github.io.
+
+Installing react, react-dom, and next using npm...
+
+<<snip>>
+
+Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
+```
+
 ## Getting Started
 
 First, run the development server:
