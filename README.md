@@ -26,6 +26,10 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 > git mv styles src\
 ```
 
+## Add Github Actions
+
+refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
+
 ## Getting Started
 
 First, run the development server:
