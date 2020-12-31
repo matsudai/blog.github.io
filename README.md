@@ -32,6 +32,14 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 > npm install sass
 ```
 
+### Typescript
+
+```txt
+> touch tsconfig.json
+> npm install --save-dev typescript @types/react @types/node
+> npm run dev # -> default tsconfig.json is written.
+```
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
