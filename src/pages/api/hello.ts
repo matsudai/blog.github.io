@@ -1,11 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type { NextApiRequest, NextApiResponse } from 'next';
 
-type Data = {
-  name: string
+interface ResponseBody {
+  name: string;
 }
 
-export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.statusCode = 200
-  res.json({ name: 'John Doe' })
-}
+export default (req: NextApiRequest, res: NextApiResponse<ResponseBody>) => {
+  res.statusCode = 200;
+  res.json({ name: 'John Doe' });
+};
