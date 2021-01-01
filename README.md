@@ -40,6 +40,58 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 > npm run dev # -> default tsconfig.json is written.
 ```
 
+### ESLint
+
+```txt
+> npx eslint --init
+
+? How would you like to use ESLint? ...
+  To check syntax only
+  To check syntax and find problems
+> To check syntax, find problems, and enforce code style
+
+? What type of modules does your project use? ...
+> JavaScript modules (import/export)
+  CommonJS (require/exports)
+  None of these
+
+? Which framework does your project use? ...
+> React
+  Vue.js
+  None of these
+
+? Does your project use TypeScript? » No / > Yes
+
+? Where does your code run? ...  (Press <space> to select, <a> to toggle all, <i> to invert selection)
+√ Browser
+√ Node
+
+? How would you like to define a style for your project? ...
+> Use a popular style guide
+  Answer questions about your style
+  Inspect your JavaScript file(s)
+? Which style guide do you want to follow? ...
+> Airbnb: https://github.com/airbnb/javascript
+  Standard: https://github.com/standard/standard
+  Google: https://github.com/google/eslint-config-google
+
+? What format do you want your config file to be in? ...
+> JavaScript
+  YAML
+  JSON
+
+---
+
+√ How would you like to use ESLint? · style
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · react
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · browser, node
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb
+√ What format do you want your config file to be in? · JavaScript
+```
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
