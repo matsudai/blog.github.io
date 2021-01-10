@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Home.module.css';
 
 // eslint-disable-next-line arrow-body-style
 const Home: FC = () => {

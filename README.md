@@ -28,6 +28,8 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 
 ### SASS
 
+※ UNINSTALLED in current version because Tailwind CSS recommend CSS but not SCSS.
+
 ```txt
 > npm install sass
 ```
@@ -90,6 +92,27 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 √ How would you like to define a style for your project? · guide
 √ Which style guide do you want to follow? · airbnb
 √ What format do you want your config file to be in? · JavaScript
+```
+
+### Tailwind CSS
+
+refs: https://tailwindcss.com/docs/guides/nextjs
+
+```
+> npm install tailwindcss@latest postcss@latest autoprefixer@latest
+> npx tailwindcss init -p
+
+   tailwindcss 2.0.2
+
+   ✅ Created Tailwind config file: tailwind.config.js
+   ✅ Created PostCSS config file: postcss.config.js
+```
+
+* Install VSCode extension: bradlc.vscode-tailwindcss in order to syntax highlight .scss
+* UNINSTALL SCSS because ↑ extension is for .css but not .scss
+
+```txt
+> npm uninstall sass
 ```
 
 ## Add Github Actions
