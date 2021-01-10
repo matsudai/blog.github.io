@@ -92,6 +92,22 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 √ What format do you want your config file to be in? · JavaScript
 ```
 
+### Tailwind CSS
+
+refs: https://tailwindcss.com/docs/guides/nextjs
+
+```
+> npm install tailwindcss@latest postcss@latest autoprefixer@latest
+> npx tailwindcss init -p
+
+   tailwindcss 2.0.2
+
+   ✅ Created Tailwind config file: tailwind.config.js
+   ✅ Created PostCSS config file: postcss.config.js
+```
+
+
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
