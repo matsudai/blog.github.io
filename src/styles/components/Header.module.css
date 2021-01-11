@@ -1,0 +1,32 @@
+@layer utilities {
+  .header {
+    /* ヘッダを浮かせる */
+    @apply fixed w-full flex;
+
+    /* 子要素は左詰めの横並び（タイトルは左、メニューはマージンを入れて右に配置する） */
+    @apply flex-row justify-start;
+
+    /* 背景と下線 */
+    @apply bg-white opacity-80 border-solid border-b border-gray-200;
+  }
+
+  .title {
+    @apply text-5xl py-2;
+  }
+
+  .menu {
+    /* メニューは右詰め */
+    @apply ml-auto;
+
+    /* リンクは横並び */
+    @apply flex flex-row items-center justify-center;
+  }
+
+  .menuItem a {
+    /* リンクのサイズをテキストより大きくする */
+    @apply block;
+    @apply text-2xl leading-relaxed w-full h-full py-2 px-4;
+
+    @apply border-solid border-l border-gray-200;
+  }
+}

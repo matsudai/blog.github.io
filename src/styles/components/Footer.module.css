@@ -1,0 +1,20 @@
+@layer utilities {
+  .footer {
+    @apply h-16 w-full flex flex-row justify-center items-center;
+    @apply border-solid border-0 border-t border-gray-200;
+  }
+
+  .footer img {
+    margin-left: 0.5rem;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    height: 1em;
+  }
+}
