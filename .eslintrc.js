@@ -51,7 +51,7 @@ module.exports = {
 
     // 型やinterfaceが解決できないことの回避。
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 
     /*
     * Next.js用の設定。

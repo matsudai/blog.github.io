@@ -1,0 +1,18 @@
+@layer utilities {
+  .footer {
+    @apply h-16 w-full flex flex-row justify-center items-center;
+    @apply border-solid border-t border-gray-200;
+  }
+
+  .footer img {
+    @apply ml-2;
+  }
+  
+  .footer a {
+    @apply flex flex-row justify-center items-center;
+  }
+
+  .logo {
+    @apply h-4;
+  }
+}
