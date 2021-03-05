@@ -1,5 +1,5 @@
 import React, { AppProps } from 'next/app';
-import '../styles/globals.css';
+import 'tailwindcss/tailwind.css';
 
 // eslint-disable-next-line arrow-body-style
 const MyApp = ({ Component, pageProps }: AppProps) => {
