@@ -1,5 +1,0 @@
-@layer utilities {
-  .rootContainer {
-    @apply px-2 min-h-screen;
-  }
-}
