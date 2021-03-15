@@ -115,6 +115,15 @@ refs: https://tailwindcss.com/docs/guides/nextjs
 > npm uninstall sass
 ```
 
+## Storybook
+
+* refs: https://storybook.js.org/tutorials/intro-to-storybook/react/ja/get-started/
+
+```txt
+> npx -p @storybook/cli sb init
+> npm i -D css-loader @storybook/addon-a11y @storybook/addon-essentials @storybook/addon-knobs
+```
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)

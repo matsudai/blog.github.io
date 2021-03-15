@@ -44,6 +44,15 @@ module.exports = {
     * ESLintのルールをTypeScript ESLintのルールで代用するパターン。
     */
 
+    // devDependenciesのimportの許可
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: ['**/*.stories.tsx'], // Storybookのimportを許可
+        optionalDependencies: false
+      }
+    ],
+
     // importがエラーになることの回避。
     // 例えば 'import React, { FC } from 'react'' したときの ''React' was used before it was defined'。
     'no-use-before-define': 'off',
