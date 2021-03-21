@@ -10,6 +10,7 @@ let nextConfig = {
 
   // // tsx、mdxファイルからページ生成する。
   // pageExtensions: ['tsx', 'mdx']
+  exportTrailingSlash: true
 };
 
 // mdxの推奨設定を読み込む。

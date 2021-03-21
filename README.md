@@ -130,6 +130,12 @@ MDX in order to post Blog.
 > npm install -D @types/highlightjs
 ```
 
+## Publish static pages
+
+```txt
+> npm install -D http-server
+```
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
