@@ -1,5 +1,4 @@
 import CodeBlock from '../../components/CodeBlock';
-import PostRepository from '../../repositories/post_repository';
 import { MDXProvider } from '@mdx-js/react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
