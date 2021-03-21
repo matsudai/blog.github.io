@@ -125,7 +125,9 @@ MDX in order to post Blog.
 ```txt
 > npm install @next/mdx @mdx-js/loader
 > npm install @mdx-js/react
-> npm install prism-react-renderer
+
+> npm install highlight.js
+> npm install -D @types/highlightjs
 ```
 
 ## Add Github Actions

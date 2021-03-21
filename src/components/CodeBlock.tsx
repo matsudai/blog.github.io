@@ -1,33 +1,24 @@
-import Prism from "prism-react-renderer/prism";
+import hljs from 'highlight.js';
+import 'highlight.js/styles/a11y-dark.css';
 
-(typeof global !== "undefined" ? global : window).Prism = Prism;
-
-require("prismjs/components/prism-ruby");
-
-
-// https://mdxjs.com/guides/syntax-highlighting#syntax-highlighting
+// import javascript from 'highlight.js/lib/languages/javascript';
+// hljs.registerLanguage('javascript', javascript);
 
 import React from 'react';
-import Highlight, { defaultProps } from 'prism-react-renderer';
 
-export default ({ className, children }) => {
+interface Props {
+  className?: string;
+  children?: string;
+}
+
+const CodeBlock = ({ className, children }) => {
   const language = className == null ? 'text' : className.replace(/language-/, '');
+  const hlClassName = `${className} hljs ${language}`;
+  const hlResult =  hljs.highlight(children ?? '', { language });
 
   return (
-    <Highlight {...defaultProps} code={children} language={language}>
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className} style={{ ...style, padding: '20px' }}>
-          {tokens.map((line, i) => (
-            // eslint-disable-next-line react/no-array-index-key
-            <div key={i} {...getLineProps({ line, key: i })}>
-              {line.map((token, key) => (
-                // eslint-disable-next-line react/no-array-index-key
-                <span key={key} {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
-        </pre>
-      )}
-    </Highlight>
-  );
+    <code className={hlClassName} dangerouslySetInnerHTML={{ __html: hlResult.value }}></code>
+  )
 };
+
+export default CodeBlock;
