@@ -40,6 +40,9 @@ module.exports = {
     // 末尾の要素のカンマをつけない（ESLintのデフォルト）。
     'comma-dangle': ['error', 'never'],
 
+    // クラスメンバの間に空行を入れなくてもエラーにならないようにする。
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+
     /*
     * ESLintのルールをTypeScript ESLintのルールで代用するパターン。
     */
@@ -51,11 +54,14 @@ module.exports = {
 
     // 型やinterfaceが解決できないことの回避。
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 
     /*
     * Next.js用の設定。
     */
+
+    // パラメータの展開を許可する
+    'react/jsx-props-no-spreading': 'off',
 
     // next/linkを利用した場合の、子要素のanchorにhrefプロパティを設定しないことによるエラーの回避。
     'jsx-a11y/anchor-is-valid': ['error', {

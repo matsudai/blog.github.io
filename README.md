@@ -115,6 +115,21 @@ refs: https://tailwindcss.com/docs/guides/nextjs
 > npm uninstall sass
 ```
 
+### MDX
+
+MDX in order to post Blog.
+
+* refs: https://mdxjs.com/getting-started/next
+* refs: https://mdxjs.com/guides/syntax-highlighting#syntax-highlighting
+
+```txt
+> npm install @next/mdx @mdx-js/loader
+> npm install @mdx-js/react
+
+> npm install highlight.js
+> npm install -D @types/highlightjs
+```
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
