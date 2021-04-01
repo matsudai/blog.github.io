@@ -11,7 +11,8 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
-		"eamodio.gitlens"
+		"eamodio.gitlens",
+		"bradlc.vscode-tailwindcss"
 	],
 
 	"postCreateCommand": "npm install",

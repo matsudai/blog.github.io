@@ -1,4 +1,3 @@
-import CodeBlock from '../../components/CodeBlock';
 import { MDXProvider } from '@mdx-js/react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
@@ -6,6 +5,7 @@ import dynamic from 'next/dynamic';
 import React, { FC } from 'react';
 import { readdirSync } from 'fs';
 import { basename } from 'path';
+import CodeBlock from '../../components/CodeBlock';
 import styles from '../../styles/Post.module.css';
 
 interface Props {}
@@ -41,7 +41,9 @@ const getStaticProps: GetStaticProps<Props> = async () => ({ props: {} });
 const getStaticPaths: GetStaticPaths = async () => {
   const filepaths = await readdirSync('src/posts', { withFileTypes: true });
   const markdownFilepaths = filepaths.filter((filepath) => filepath.isFile() && filepath.name.match(/\.mdx$/));
-  const paths = await Promise.all(markdownFilepaths.map(async (filepath, _) => `/posts/${basename(filepath.name, '.mdx')}`));
+  const paths = await Promise.all(
+    markdownFilepaths.map(async (filepath, _) => `/posts/${basename(filepath.name, '.mdx')}`)
+  );
 
   return {
     paths,

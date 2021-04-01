@@ -47,15 +47,14 @@
   @apply m-0 text-lg leading-relaxed;
 }
 
-.ol{
+.ol {
   counter-reset: ol-counter;
   @apply pl-4;
 }
-.ol .li:before{
+.ol .li:before {
   counter-increment: ol-counter;
-  content: counter(ol-counter)". ";
+  content: counter(ol-counter) '. ';
 }
-
 
 .grid {
   display: flex;
