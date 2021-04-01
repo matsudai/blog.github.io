@@ -145,6 +145,12 @@ In order to use breakpoints.
     * Run "Next: Attach Backend" - for SSR
     * Run "Next: Launch Chrome"  - for CSR
 
+## Prettier
+
+```txt
+> npm i -D prettier eslint-config-prettier
+```
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
