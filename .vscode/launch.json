@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "attach",
+      "name": "Next: Attach Backend",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "port": 9229
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Next: Launch Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true
+    }
+  ]
+}

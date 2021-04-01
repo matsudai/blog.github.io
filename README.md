@@ -136,6 +136,15 @@ MDX in order to post Blog.
 > npm install -D http-server
 ```
 
+## Debug on VSCode
+
+In order to use breakpoints.
+
+1. `> npm run dev`
+2. VSCode -> "Run and Debug" ->
+    * Run "Next: Attach Backend" - for SSR
+    * Run "Next: Launch Chrome"  - for CSR
+
 ## Add Github Actions
 
 refs: [https://github.com/peaceiris/actions-gh-pages#⭐️ React and Next](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-react-and-next)
