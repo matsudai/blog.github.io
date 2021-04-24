@@ -1,0 +1,19 @@
+.title {
+  @apply text-center text-6xl my-4;
+}
+
+.nav ul {
+  @apply flex flex-row;
+}
+
+.nav li {
+  @apply border-l;
+}
+
+.nav li:last-child {
+  @apply border-r;
+}
+
+.nav a {
+  @apply inline-block text-lg px-4 py-1;
+}

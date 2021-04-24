@@ -1,10 +1,11 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import React, { FC } from 'react';
 import { readdirSync } from 'fs';
 import { basename } from 'path';
-import styles from '../styles/Home.module.css';
+import PageHeader from '../components/PageHeader';
+import PageFooter from '../components/PageFooter';
+import styles from '../styles/pages/Posts.module.css';
 
 interface Props {
   posts: {
@@ -22,12 +23,10 @@ interface Props {
 const Posts: FC<Props> = ({ posts }: Props) => {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <PageHeader />
 
       <main className={styles.main}>
+        ★工事中です
         <ul className={styles.grid}>
           {posts.map(({ key, path, frontFormatter }) => (
             <li key={key} className={styles.card}>
@@ -43,15 +42,7 @@ const Posts: FC<Props> = ({ posts }: Props) => {
         </ul>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <PageFooter />
     </div>
   );
 };

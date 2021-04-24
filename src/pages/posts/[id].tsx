@@ -5,8 +5,10 @@ import dynamic from 'next/dynamic';
 import React, { FC } from 'react';
 import { readdirSync } from 'fs';
 import { basename } from 'path';
+import PageHeader from '../../components/PageHeader';
+import PageFooter from '../../components/PageFooter';
 import CodeBlock from '../../components/CodeBlock';
-import styles from '../../styles/Post.module.css';
+import styles from '../../styles/pages/posts/[id].module.css';
 
 interface Props {}
 interface ComponentProps {
@@ -30,9 +32,17 @@ const PostPage: FC<Props> = () => {
   const { id } = useRouter().query;
   const DynamicMDXComponent = dynamic(() => import(`../../posts/${id}.mdx`));
   return (
-    <MDXProvider components={components}>
-      <DynamicMDXComponent />
-    </MDXProvider>
+    <div className={styles.container}>
+      <PageHeader />
+
+      <main className={styles.main}>
+        <MDXProvider components={components}>
+          <DynamicMDXComponent />
+        </MDXProvider>
+      </main>
+
+      <PageFooter />
+    </div>
   );
 };
 
