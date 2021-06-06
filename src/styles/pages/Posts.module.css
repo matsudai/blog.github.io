@@ -1,5 +1,5 @@
 .main {
-  @apply mb-12 w-full;
+  @apply mb-12 flex-grow w-full;
 }
 
 .grid {

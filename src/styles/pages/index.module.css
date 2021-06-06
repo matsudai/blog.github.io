@@ -1,5 +1,5 @@
 .main {
-  @apply mb-12;
+  @apply mb-12 flex-grow;
 }
 
 .main h2 {
