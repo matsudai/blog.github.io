@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 import React, { FC } from 'react';
 import { readdirSync } from 'fs';
 import { basename } from 'path';
+import PageContainer from '../layouts/PageContainer';
 import PageHeader from '../components/PageHeader';
 import PageFooter from '../components/PageFooter';
 import styles from '../styles/pages/Posts.module.css';
@@ -22,11 +24,13 @@ interface Props {
 // eslint-disable-next-line arrow-body-style
 const Posts: FC<Props> = ({ posts }: Props) => {
   return (
-    <div className={styles.container}>
+    <PageContainer>
+      <Head>
+        <title>記事 | 末代</title>
+      </Head>
       <PageHeader />
 
       <main className={styles.main}>
-        ★工事中です
         <ul className={styles.grid}>
           {posts.map(({ key, path, frontFormatter }) => (
             <li key={key} className={styles.card}>
@@ -43,7 +47,7 @@ const Posts: FC<Props> = ({ posts }: Props) => {
       </main>
 
       <PageFooter />
-    </div>
+    </PageContainer>
   );
 };
 
