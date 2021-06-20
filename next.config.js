@@ -10,11 +10,7 @@ let nextConfig = {
 
   // // tsx、mdxファイルからページ生成する。
   // pageExtensions: ['tsx', 'mdx']
-  trailingSlash: true,
-
-  future: {
-    webpack5: true
-  }
+  trailingSlash: true
 };
 
 // mdxの推奨設定を読み込む。

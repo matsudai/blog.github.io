@@ -4,7 +4,7 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  extends: ['plugin:react/recommended', 'airbnb', 'next', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -59,6 +59,9 @@ module.exports = {
     /*
      * Next.js用の設定。
      */
+
+    // 静的な画像でもImageタグを使わないことを許す
+    '@next/next/no-img-element': 'off',
 
     // パラメータの展開を許可する
     'react/jsx-props-no-spreading': 'off',

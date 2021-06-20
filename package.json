@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "publish": "next build && next export && http-server out -p 8000",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
@@ -15,12 +16,12 @@
     "@next/mdx": "^10.2.3",
     "autoprefixer": "^10.2.6",
     "highlight.js": "^10.7.3",
-    "next": "^10.2.3",
+    "next": "^11.0.0",
     "postcss": "^8.3.0",
     "prism-react-renderer": "^1.2.1",
     "prismjs": "^1.23.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "tailwindcss": "^2.1.4"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
