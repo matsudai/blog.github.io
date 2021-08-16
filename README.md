@@ -7,15 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### Create Next.js App
 
 ```txt
-> npx create-next-app matsudai.github.io
-npx: installed 1 in 4.928s
-Creating a new Next.js app in C:\xxxxx\matsudai.github.io.
-
-Installing react, react-dom, and next using npm...
-
-<<snip>>
-
-Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
+> npx create-next-app --typescript --use-npm matsudai.github.io
 ```
 
 ### Create src directory and move sources
@@ -24,74 +16,6 @@ Success! Created matsudai.github.io at C:\xxxxx\matsudai.github.io.
 > mkdir src
 > git mv pages src\
 > git mv styles src\
-```
-
-### SASS
-
-※ UNINSTALLED in current version because Tailwind CSS recommend CSS but not SCSS.
-
-```txt
-> npm install sass
-```
-
-### Typescript
-
-```txt
-> touch tsconfig.json
-> npm install --save-dev typescript @types/react @types/node
-> npm run dev # -> default tsconfig.json is written.
-```
-
-### ESLint
-
-```txt
-> npx eslint --init
-
-? How would you like to use ESLint? ...
-  To check syntax only
-  To check syntax and find problems
-> To check syntax, find problems, and enforce code style
-
-? What type of modules does your project use? ...
-> JavaScript modules (import/export)
-  CommonJS (require/exports)
-  None of these
-
-? Which framework does your project use? ...
-> React
-  Vue.js
-  None of these
-
-? Does your project use TypeScript? » No / > Yes
-
-? Where does your code run? ...  (Press <space> to select, <a> to toggle all, <i> to invert selection)
-√ Browser
-√ Node
-
-? How would you like to define a style for your project? ...
-> Use a popular style guide
-  Answer questions about your style
-  Inspect your JavaScript file(s)
-? Which style guide do you want to follow? ...
-> Airbnb: https://github.com/airbnb/javascript
-  Standard: https://github.com/standard/standard
-  Google: https://github.com/google/eslint-config-google
-
-? What format do you want your config file to be in? ...
-> JavaScript
-  YAML
-  JSON
-
----
-
-√ How would you like to use ESLint? · style
-√ What type of modules does your project use? · esm
-√ Which framework does your project use? · react
-√ Does your project use TypeScript? · No / Yes
-√ Where does your code run? · browser, node
-√ How would you like to define a style for your project? · guide
-√ Which style guide do you want to follow? · airbnb
-√ What format do you want your config file to be in? · JavaScript
 ```
 
 ### Tailwind CSS
@@ -108,13 +32,6 @@ refs: https://tailwindcss.com/docs/guides/nextjs
    ✅ Created PostCSS config file: postcss.config.js
 ```
 
-* Install VSCode extension: bradlc.vscode-tailwindcss in order to syntax highlight .scss
-* UNINSTALL SCSS because ↑ extension is for .css but not .scss
-
-```txt
-> npm uninstall sass
-```
-
 ### MDX
 
 MDX in order to post Blog.
@@ -128,12 +45,6 @@ MDX in order to post Blog.
 
 > npm install highlight.js
 > npm install -D @types/highlightjs
-```
-
-## Publish static pages
-
-```txt
-> npm install -D http-server
 ```
 
 ## Debug on VSCode

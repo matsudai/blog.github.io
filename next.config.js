@@ -1,4 +1,6 @@
+/** @type {import('next').NextConfig} */
 let nextConfig = {
+  reactStrictMode: true,
   // refs: https://nextjs.org/docs/api-reference/next.config.js/custom-webpack-config
   // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
   //   // Note: we provide webpack above so you should not `require` it
