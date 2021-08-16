@@ -18,6 +18,7 @@ interface ComponentProps {
 }
 
 const componentP = ({ children }: ComponentProps) => <p className={styles.paragraph}>{children}</p>;
+const compoentH1 = ({ children }: ComponentProps) => <h1 className={styles.h1}>{children}</h1>;
 const compoentH2 = ({ children }: ComponentProps) => <h2 className={styles.h2}>{children}</h2>;
 const compoentH3 = ({ children }: ComponentProps) => <h3 className={styles.h3}>{children}</h3>;
 const compoentH4 = ({ children }: ComponentProps) => <h4 className={styles.h4}>{children}</h4>;
@@ -35,6 +36,7 @@ const compoentA = ({ children, ...props }: ComponentProps) => (
 
 const components = {
   p: componentP,
+  h1: compoentH1,
   h2: compoentH2,
   h3: compoentH3,
   h4: compoentH4,

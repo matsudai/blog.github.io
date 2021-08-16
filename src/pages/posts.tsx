@@ -53,7 +53,9 @@ const Posts: FC<Props> = ({ posts }: Props) => {
 
 const getStaticProps: GetStaticProps<Props> = async () => {
   const filepaths = await readdirSync('src/posts', { withFileTypes: true });
-  const markdownFilepaths = filepaths.filter((filepath) => filepath.isFile() && filepath.name.match(/\.mdx$/));
+  const markdownFilepaths = filepaths
+    .filter((filepath) => filepath.isFile() && filepath.name.match(/\.mdx$/))
+    .reverse();
 
   const posts = await Promise.all(
     markdownFilepaths.map(async (filepath, _) => {
